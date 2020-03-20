@@ -1,15 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculadora de Freela - He4rtDevs</title>
-    <link rel="stylesheet" href="./main.css" />
-  </head>
-  <body>
-    <div>
-      <h1>Olá mundo.</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de Freela - He4rtDevs</title>
+  <meta name="author" content="Everton Oliver" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+
+  <header>
+    <img src="./img/heart-logo.png" alt="Logo da He4rtDevs" class="logo-heart">
+    <nav class="menu">
+      <ul>
+        <li><a href="https://twitter.com/He4rtDevs" target="_blank">He4rtdevs</a></li>
+        <li><a href="https://github.com/evertoont" target="_blank">GITHUB</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="./img/money.png" alt="money emoji">
+    <h1>Calculadora de Freelas</h1>
+    <h3>Desafio desenvolvido pelo grupo <strong>He4rt Developers</strong>.
+      Uma calculadora que irá te mostrar o valor da sua hora perante o freelance cotado. </h3>
+    <a href="#calc" class="scroll">Calcule</a>
+  </section>
+
+  <section id="calc" class="calculator">
+    <ul class="grid">
+      <li class="grid-one">
+        <i class="fas fa-clock icon"></i>
+        <h4>Tempo diário investido</h4>
+        <p>O tempo para relaxar e descontrair no seu dia é algo muito valioso, certo? Então temos que levar esse
+          fator em consideração.</p>
+        <div class="form">
+          <input type="text" id="horasDiarias" placeholder="Horas" autocomplete="off" required
+            onkeypress="return apenasNumeros();">
+        </div>
+      </li>
+
+      <li class="grid-two">
+        <i class="fas fa-calendar-day icon"></i>
+        <h4>Dias efetivos trabalhando</h4>
+        <p>Outro fator é a quantidade de dias que você irá disponibilizar para trabalhar no projeto. Organize-se o
+          máximo possível.
+        </p>
+        <div class="form">
+          <input type="text" id="diasEfetivos" placeholder="Dias" autocomplete="off" required
+            onkeypress="return apenasNumeros();">
+        </div>
+      </li>
+
+      <li class="grid-one">
+        <i class="fas fa-umbrella-beach icon"></i>
+        <h4>Dias de férias por projeto</h4>
+        <p>Uma parte do valor da sua hora reflete diretamente na quantidade de dias que você deseja tirar "férias" com o
+          valor total projeto.</p>
+        <div class="form">
+          <input type="text" id="diasFerias" placeholder="Férias" autocomplete="off" required
+            onkeypress="return apenasNumeros();">
+        </div>
+      </li>
+
+      <li class="grid-two">
+        <i class="far fa-money-bill-alt icon"></i>
+        <h4>Valor total do Projeto</h4>
+        <p>Não podemos esquecer do principal fator que é o total a ser recebido pelo freela. A partir desse valor, do
+          quanto você desejaria ganhar em cima do trabalho, é feito o cálculo maior.</p>
+        <div class="form">
+          <input type="text" id="valorProjeto" placeholder="Total" autocomplete="off" required
+            onkeypress="return apenasNumeros();">
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="btnCalc">
+    <button type="submit" onclick="calcularValorHora()">CALCULAR</Button>
     </div>
-    <script src="./main.js"></script>
-  </body>
+    <p class="result">Valor por hora: <span id="valorHora"></span></p>
+  </section>
+
+  <footer>
+    <p>Desenvolvido por <a href="https://github.com/evertoont" target="_blank">Everton Oliver</p>
+  </footer>
+
+
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/scroll.js"></script>
+  <script src="./js/main.js"></script>
+
+</body>
+
 </html>
