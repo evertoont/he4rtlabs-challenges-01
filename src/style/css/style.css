@@ -1,3 +1,36 @@
+/* GERAL*/
+body {
+  background-color: #eef0f1;
+}
 
+/* HEADER */
+header {
+  background-color: #6610bd;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 6px 0;
+  font-size: 1.3rem;
+}
+header .menu ul {
+  display: flex;
+}
+header .menu ul li {
+  margin: 0 15px;
+}
+header .menu ul li a {
+  color: #FFF;
+}
+header .menu ul li a:hover {
+  opacity: 1;
+  border-bottom: solid 2.5px #f5f5f5;
+}
+header .logo-heart {
+  height: 90px;
+  width: 280px;
+}
 
 /*# sourceMappingURL=style.css.map */
