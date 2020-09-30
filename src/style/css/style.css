@@ -22,7 +22,7 @@ header .menu ul li {
   margin: 0 15px;
 }
 header .menu ul li a {
-  color: #FFF;
+  color: #fff;
 }
 header .menu ul li a:hover {
   opacity: 1;
@@ -31,6 +31,41 @@ header .menu ul li a:hover {
 header .logo-heart {
   height: 90px;
   width: 280px;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(to right, #5c16a1, #5f0cb3);
+  background-size: cover;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.hero img {
+  height: 70px;
+  width: 70px;
+}
+.hero h3 {
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.hero a {
+  background: transparent;
+  color: #fff;
+  border: solid 2px #fff;
+  border-radius: 40px;
+  margin-bottom: 50px;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+}
+.hero a:hover {
+  background-color: #c9c9c9;
+  color: #000;
 }
 
 /*# sourceMappingURL=style.css.map */
