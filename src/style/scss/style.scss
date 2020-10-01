@@ -7,10 +7,8 @@ body {
 /* HEADER */
 
 header {
-  background-color: #6610bd;
+  background-color:#6420a7;
   width: 100%;
-  top: 0;
-  left: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -42,7 +40,7 @@ header {
 /* HERO */
 
 .hero {
-  background: linear-gradient(to right, rgb(92, 22, 161), rgb(95, 12, 179));
+  background: linear-gradient(to right, #5c16a1, #5f0cb3);
   background-size: cover;
   min-height: 50vh;
   display: flex;
@@ -72,9 +70,74 @@ header {
     padding: 0.5rem 1rem;
     font-size: 1.25rem;
 
-    &:hover{
-        background-color: #c9c9c9;
-        color: #000;
+    &:hover {
+      background-color: #c9c9c9;
+      color: #000;
     }
+  }
+}
+
+/* CALCULADORA */
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 100px;
+
+  .grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      background-color: #fff;
+      border: solid 2px #a1a1a1;
+      padding: 40px 20px;
+      margin: 0 8px 20px 0;
+      border-radius: 4px;
+      justify-content: center;
+      h4 {
+        text-align: center;
+        padding-bottom: 10px;
+      }
+
+      p {
+        text-align: justify;
+      }
+
+      &.grid-one,
+      &.grid-two {
+        flex-basis: 48%;
+      }
+    }
+  }
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  color: #6420a7;
+  font-size: 2rem;
+  padding: 3px;
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid #5d5d5d;
+  padding: 5px;
+  color: #6420a7;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+input {
+  &:focus {
+    border: none;
+    border-bottom: 2px solid #6420a7;
+    outline: 0;
   }
 }
