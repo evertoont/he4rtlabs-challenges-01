@@ -28,7 +28,7 @@ header .menu ul li a:hover {
 }
 header .logo-heart {
   height: 90px;
-  width: 280px;
+  width: 250px;
 }
 
 /* HERO */
@@ -121,6 +121,39 @@ input:focus {
   border: none;
   border-bottom: 2px solid #6420a7;
   outline: 0;
+}
+
+.btnCalc {
+  display: flex;
+  justify-content: center;
+}
+.btnCalc button {
+  width: 160px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 15px;
+  color: #363636;
+  border: 2px solid #6420a7;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0 2px 5px 0 #5d5d5d;
+}
+.btnCalc button:hover {
+  outline: 0;
+  background-color: #6420a7;
+  color: white;
+}
+.btnCalc button:focus {
+  outline: 0;
+}
+
+.result {
+  margin-left: 30px;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #5d5d5d;
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

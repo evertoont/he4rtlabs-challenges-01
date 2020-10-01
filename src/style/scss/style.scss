@@ -7,7 +7,7 @@ body {
 /* HEADER */
 
 header {
-  background-color:#6420a7;
+  background-color: #6420a7;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -33,7 +33,7 @@ header {
 
   .logo-heart {
     height: 90px;
-    width: 280px;
+    width: 250px;
   }
 }
 
@@ -140,4 +140,39 @@ input {
     border-bottom: 2px solid #6420a7;
     outline: 0;
   }
+}
+
+.btnCalc {
+  display: flex;
+  justify-content: center;
+
+  button {
+    width: 160px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #363636;
+    border: 2px solid #6420a7;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0 2px 5px 0 #5d5d5d;
+
+    &:hover{
+      outline: 0;
+      background-color: #6420a7;
+      color: white;  
+    }
+    &:focus{
+      outline: 0;
+    }
+  }
+}
+
+.result {
+  margin-left: 30px;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #5d5d5d;
+  font-size: 1.2rem;
 }
