@@ -10,6 +10,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-direction: row;
   padding: 6px 0;
   font-size: 1.3rem;
 }
@@ -37,9 +38,9 @@ header .logo-heart {
   background-size: cover;
   min-height: 50vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   color: #fff;
 }
 .hero img {
@@ -69,8 +70,9 @@ header .logo-heart {
 /* CALCULADORA */
 .calculator {
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  flex-direction: column;
   padding: 50px 100px;
 }
 .calculator .grid {

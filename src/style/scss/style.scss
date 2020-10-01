@@ -1,3 +1,6 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
 /* GERAL*/
 
 body {
@@ -7,11 +10,9 @@ body {
 /* HEADER */
 
 header {
-  background-color: #6420a7;
+  background-color: $primary-color;
   width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  @include simple-flex(space-around, center);
   padding: 6px 0;
   font-size: 1.3rem;
 
@@ -43,10 +44,7 @@ header {
   background: linear-gradient(to right, #5c16a1, #5f0cb3);
   background-size: cover;
   min-height: 50vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @include simple-flex(center, center, column);
   color: #fff;
 
   img {
@@ -80,9 +78,7 @@ header {
 /* CALCULADORA */
 
 .calculator {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include simple-flex(flex-start, center, column);
   padding: 50px 100px;
 
   .grid {
@@ -120,7 +116,7 @@ header {
 }
 
 .icon {
-  color: #6420a7;
+  color: $primary-color;
   font-size: 2rem;
   padding: 3px;
 }
@@ -129,7 +125,7 @@ input {
   border: none;
   border-bottom: 2px solid #5d5d5d;
   padding: 5px;
-  color: #6420a7;
+  color: $primary-color;
   letter-spacing: 2px;
   text-align: center;
 }
@@ -137,7 +133,7 @@ input {
 input {
   &:focus {
     border: none;
-    border-bottom: 2px solid #6420a7;
+    border-bottom: 2px solid $primary-color;
     outline: 0;
   }
 }
@@ -152,18 +148,18 @@ input {
     font-weight: bold;
     font-size: 15px;
     color: #363636;
-    border: 2px solid #6420a7;
+    border: 2px solid $primary-color;
     border-radius: 6px;
     cursor: pointer;
     background-color: #fff;
     box-shadow: 0 2px 5px 0 #5d5d5d;
 
-    &:hover{
+    &:hover {
       outline: 0;
-      background-color: #6420a7;
-      color: white;  
+      background-color: $primary-color;
+      color: white;
     }
-    &:focus{
+    &:focus {
       outline: 0;
     }
   }
