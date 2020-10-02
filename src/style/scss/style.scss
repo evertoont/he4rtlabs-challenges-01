@@ -172,3 +172,21 @@ input {
   color: #5d5d5d;
   font-size: 1.2rem;
 }
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 20px 0;
+  background-color: #d8d8d8;
+
+  a {
+    color: $primary-color;
+
+    &:hover {
+      color: #8743cc;
+    }
+  }
+}

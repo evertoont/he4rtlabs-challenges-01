@@ -158,4 +158,19 @@ input:focus {
   font-size: 1.2rem;
 }
 
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 20px 0;
+  background-color: #d8d8d8;
+}
+footer a {
+  color: #6420a7;
+}
+footer a:hover {
+  color: #8743cc;
+}
+
 /*# sourceMappingURL=style.css.map */
